@@ -1,11 +1,8 @@
 # boilerplate
 
-## utilisation
+## Docs
 
-Clone this repository
-
-run `npm i` in your favorite terminal
-
-run `npm start` to begin the development of your project
-
-run `npm run build` to build your project
+1. Clone this repository
+2. run `npm i` in your favorite terminal
+3. run `npm start` to begin the development of your project
+4. run `npm run build` to build your project
