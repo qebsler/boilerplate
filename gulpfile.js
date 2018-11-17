@@ -50,7 +50,7 @@ gulp.task('js', () => {
 })
 
 gulp.task('img', () => {
-  return gulp.src('src/assets/**/*.jpg' || 'src/assets/**/*.png')
+  return gulp.src('src/assets/**/*.png')
     .pipe(tinifyImg('6Iw24mzvAIja1nqbsb8yY2eFcwamF7KH'))
     .pipe(gulp.dest('dist/assets'))
 })
@@ -77,8 +77,3 @@ gulp.task('watch', [ 'bs-server', 'js', 'css', 'html', 'assets' ], () => {
 })
 
 gulp.task('default', [ 'html', 'css', 'js' ]) // IF I ADD A PICTURE, RUN THE "IMG" TASK
-
-gulp.task('git', ['default'], () => {
-  gulp.src('dist/**/*.*')
-    .pipe(gulp.dest('build'))
-})
